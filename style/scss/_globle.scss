@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    scroll-behavior: smooth;
+}
+// --------variables------------------
+$main-color:rgb(78, 255, 78);
+$primary-heading:4.5rem;
+
+//-------function---------
+@mixin flexbox($var1:center,$var2:row,$var3:center){
+    display: flex;
+    justify-content: $var1;
+    align-items: center;
+    flex-direction: $var2;
+    text-align: $var3;
+}
+@mixin  Text-design($var1,$var2:500,$var3:black) {
+    font-size: $var1;
+    font-weight: $var2;
+    color: $var3;
+}
+
+//------clases---------
+.primary-btn{
+    font-weight: 500;
+    background-color: $main-color;
+    color: white;
+    border: .1rem solid $main-color;
+    &:hover{
+        background-color: rgb(24, 185, 24);
+        cursor: pointer;
+    }
+}
+.primary-heading{
+    @include Text-design(4.5rem,700,black)
+}
+

@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1475px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1235px) {
+  html {
+    font-size: 7.5px;
+  }
+  #hero-section .search-section input {
+    width: 27vw;
+  }
+  #hero-section .contactus-section {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  html {
+    font-size: 8px;
+  }
+}
