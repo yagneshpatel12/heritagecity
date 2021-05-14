@@ -47,7 +47,42 @@ html {
   font-size: 9rem;
   font-weight: 700;
   color: #ffe600;
-  margin-top: 10rem;
+}
+
+#hero-section .auto-text-1 {
+  width: 45rem;
+  margin: 10rem auto 0rem auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: auto-text-1 1s steps(44) 0.5s 1 normal both;
+}
+
+#hero-section .auto-text-2 {
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: auto-text-2 1s steps(44) 0.5s 1 normal both;
+}
+
+@keyframes auto-text-1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45rem;
+  }
+}
+
+@keyframes auto-text-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20rem;
+  }
 }
 
 #hero-section .search-section {
@@ -169,6 +204,31 @@ html {
   cursor: pointer;
 }
 
+.society-gallery-section {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.society-gallery-section .carousel {
+  margin-top: 4rem;
+  background: #EEE;
+  width: 85vw;
+  margin: 4rem auto;
+}
+
+.society-gallery-section .carousel-cell {
+  width: 28%;
+  height: 30rem;
+  margin-right: 1.5rem;
+  counter-increment: carousel-cell;
+}
+
+.society-gallery-section .carousel-cell img {
+  border-radius: .5rem;
+  height: 100%;
+  width: 100%;
+}
+
 .notice-background {
   background-color: #4eff4e;
   display: flex;
@@ -177,7 +237,7 @@ html {
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  margin-top: 5rem;
+  margin-top: 13rem;
 }
 
 .notice-background .noticeboard-section {
@@ -538,29 +598,6 @@ html {
   text-align: center;
   padding: 3rem 0rem;
   background-color: #4bff0026;
-}
-
-.line-1 {
-  width: 45rem;
-  margin: 0 auto;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 1s steps(44) 0.5s 1 normal both;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 45rem;
-  }
 }
 
 * {

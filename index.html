@@ -9,6 +9,7 @@
     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
     crossorigin="anonymous" />
     <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style/css/responsive.css">
 </head>
 <body>
@@ -25,11 +26,10 @@
             <li><a href="login.html"><button class="login-btn">Login</button></a></li>
         </ul>
     </nav>
-
     <!-- hero-section -->
     <div id="hero-section">
-        <p class="line-1 anim-typewriter">HERITAGE</p>
-        <p style="margin-top: 0rem; margin-bottom: 0rem;" class="line-1 anim-typewriter">CITY</p>
+        <p class="auto-text-1">HERITAGE</p>
+        <p style="margin-top: 0rem;" class="auto-text-2">CITY</p>
         <div class="search-section">
             <img src="img/svg-icon/search.svg" alt="">
             <input type="search" placeholder="search anything in website">
@@ -40,7 +40,6 @@
             <button class="primary-btn">Contact Us <img src="img/svg-icon/contact-forward.svg" alt=""></button>
         </div>
     </div>
-
     <!-- facilities-section -->
     <div class="facilities-section">
      <p class="primary-heading">Facilities In Our Society</p>
@@ -90,6 +89,28 @@
          </div>
         
      </div>
+    </div>
+    <!-- Society-Gallery -->
+    <div class="society-gallery-section">
+        <p class="primary-heading">Society-Gallery</p>
+        <div class="carousel" data-flickity='{ "groupCells":2 ,"wrapAround": true  }'>
+            <div class="carousel-cell"><img src="img/gallery-img/img-1.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-2.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-3.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-4.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-5.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-6.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-7.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-8.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-9.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-10.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-11.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-12.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-13.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/gallery-img/img-14.jpg" alt=""></div>
+            
+          </div>
+          
     </div>
     <!-- noticeboard-section -->
     <div class="notice-background">
@@ -327,4 +348,6 @@
 <p class="All-right-reserved">© 2021 90square by ©copyright  All Rights Reserved </p>
 </body>
 <script src="javascript/home.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
 </html>
