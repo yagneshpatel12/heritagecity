@@ -415,6 +415,7 @@
    .society-name-footer{
       text-align: center;
       @include Text-design(4rem,700,$main-color);
+      display: none;
    }
 }
 .All-right-reserved{
