@@ -16,34 +16,40 @@
 <body>
 
     <!--navbar without login -->
-    <nav class="nav-without-login">
-        <img src="img/logo.png" alt="society-logo" class="logo">
-        <ul>
-            <li><a class="color-change" href="#hero-section">Home</a></li>
-            <li><a class="color-change" href="#about-section">About</a></li>
-            <li><a class="color-change" href="#">Services</a></li>
-            <li><a class="color-change" href="#footer-section">Contact</a></li>
-            <!-- Login button -->
-            <li><a href="login.html"><button class="login-btn">Login</button></a></li>
-        </ul>
+    <nav class="navbar-section">
+        <div class="nav-width">
+            <img src="img/logo.png" alt="society-logo" class="logo">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <li><a class="color-change" href="#hero-section">Home</a></li>
+                <li><a class="color-change" href="#about-section">About</a></li>
+                <li><a class="color-change" href="#">Services</a></li>
+                <li><a class="color-change" href="#footer-section">Contact</a></li>
+                <!-- Login button -->
+                <li><a href="login.html"><button class="login-btn">Login</button></a></li>
+
+            </ul>
+        </div>
     </nav>
     <!-- hero-section -->
     <div id="hero-section">
-        <p class="auto-text-1">HERITAGE</p>
-        <p style="margin-top: 0rem;" class="auto-text-2">CITY</p>
-        <div class="search-section">
-            <img src="img/svg-icon/search.svg" alt="">
-            <input type="search" placeholder="search anything in website">
-            <button class="primary-btn">Search</button>
-        </div>
-        <div class="contactus-section">
-            <p>New Society Member?Want To Join?</p>
-            <button class="primary-btn">Contact Us <img src="img/svg-icon/contact-forward.svg" alt=""></button>
-        </div>
+            <p class="auto-text-1">HERITAGE</p>
+            <p  class="auto-text-2">CITY</p>
+            <div class="search-section">
+                <img src="img/svg-icon/search.svg" alt="">
+                <input type="search" placeholder="search anything in website">
+                <button class="primary-btn">Search</button>
+            </div>
+            <div class="contactus-section">
+                <p>New Society Member?Want To Join?</p>
+                <button>Contact Us <img src="img/svg-icon/contact-forward.svg" alt=""></button>
+            </div>
     </div>
+    <div class="page-width">
+
     <!-- facilities-section -->
     <div class="facilities-section">
-     <p class="primary-heading">Facilities In Our Society</p>
+     <h2 class="primary-heading">Facilities In Our Society</h2>
      <div class="facilities-card-list">
          <div class="facilities-card">
              <img src="img/cctv.png" alt="cctv">
@@ -93,7 +99,7 @@
     </div>
     <!-- Society-Gallery -->
     <div class="society-gallery-section">
-        <p class="primary-heading">Society-Gallery</p>
+        <h2 class="primary-heading">Society-Gallery</h2>
         <div class="carousel" data-flickity='{ "groupCells":2 ,"wrapAround": true ,"autoPlay":true }'>
             <div class="carousel-cell"><img src="img/gallery-img/img-1.jpg" alt=""></div>
             <div class="carousel-cell"><img src="img/gallery-img/img-2.jpg" alt=""></div>
@@ -109,14 +115,13 @@
             <div class="carousel-cell"><img src="img/gallery-img/img-12.jpg" alt=""></div>
             <div class="carousel-cell"><img src="img/gallery-img/img-13.jpg" alt=""></div>
             <div class="carousel-cell"><img src="img/gallery-img/img-14.jpg" alt=""></div>
-            
           </div>
           
     </div>
     <!-- noticeboard-section -->
     <div class="notice-background">
     <div class="noticeboard-section">
-        <p class="primary-heading" style="text-decoration: underline;">Notice Board</p>
+        <h2 class="primary-heading" style="text-decoration: underline;">Notice Board</h2>
         <ul>
             <li>If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work</li>
             <li>Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time.</li>
@@ -127,7 +132,7 @@
     </div>
     <!-- article-section -->
    <div class="society-members-articles">
-       <p class="primary-heading">Society-Members-Articles</p>
+       <h2 class="primary-heading">Society-Members-Articles</h2>
        <div class="articles-section">
            <div class="article">
                <img src="img/post-1.png" alt="">
@@ -223,90 +228,51 @@
            </div>
           
        </div>
-       <button class="primary-btn">Explore More Articles</button>
+       <a class="btn-link">Explore More Articles<i class="fas fa-arrow-right"></i></a>
    </div>
    <!-- managment-peoples-section -->
    <div class="managment-peoples-section">
-       <p class="primary-heading">Society-managment-peoples</p>
+       <h2 class="primary-heading">Society-managment-peoples</h2>
        <div class="managment-peoples">
+           
            <div class="peoples-card">
-               <div class="background-svg">
-                   <img src="img/svg-icon/card-design.svg" alt="">
-               </div>
-               <div class="people-details">
-                   <img src="img/gitprofile.jpg" class="managment-profile" alt="">
-                   <p>yagnesh patel</p>
-                   <p>Mahamantri of Society</p>
-                   <div>
-                       <p><i class="fas fa-phone-alt"></i>+919876484789</p>
+                   <div class="img"></div>
+                   <p class="name">yagnesh patel</p>
+                   <p class="hoddo">Mahamantri of Society</p>
+                   <div class="contact">
+                       <a><i class="fas fa-phone-alt"></i>+919876484789</a>
                        <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
                    </div>
-               </div>
            </div>
            <div class="peoples-card">
-            <div class="background-svg">
-                <img src="img/svg-icon/card-design.svg" alt="">
-            </div>
-            <div class="people-details">
-                <img src="img/gitprofile.jpg" class="managment-profile" alt="">
-                <p>yagnesh patel</p>
-                <p>Mahamantri of Society</p>
-                <div>
-                    <p><i class="fas fa-phone-alt"></i>+919876484789</p>
-                    <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
-                </div>
-            </div>
+                   <div class="img"></div>
+                   <p class="name">yagnesh patel</p>
+                   <p class="hoddo">Mahamantri of Society</p>
+                   <div class="contact">
+                       <a><i class="fas fa-phone-alt"></i>+919876484789</a>
+                       <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
+                   </div>
            </div>
            <div class="peoples-card">
-            <div class="background-svg">
-                <img src="img/svg-icon/card-design.svg" alt="">
-            </div>
-            <div class="people-details">
-                <img src="img/gitprofile.jpg" class="managment-profile" alt="">
-                <p>yagnesh patel</p>
-                <p>Mahamantri of Society</p>
-                <div>
-                    <p><i class="fas fa-phone-alt"></i>+919876484789</p>
-                    <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
-                </div>
-            </div>
+                   <div class="img"></div>
+                   <p class="name">yagnesh patel</p>
+                   <p class="hoddo">Mahamantri of Society</p>
+                   <div class="contact">
+                       <a><i class="fas fa-phone-alt"></i>+919876484789</a>
+                       <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
+                   </div>
            </div>
-           <div class="peoples-card">
-            <div class="background-svg">
-                <img src="img/svg-icon/card-design.svg" alt="">
-            </div>
-            <div class="people-details">
-                <img src="img/gitprofile.jpg" class="managment-profile" alt="">
-                <p>yagnesh patel</p>
-                <p>Mahamantri of Society</p>
-                <div>
-                    <p><i class="fas fa-phone-alt"></i>+919876484789</p>
-                    <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
-                </div>
-            </div>
-           </div>
-           <div class="peoples-card">
-            <div class="background-svg">
-                <img src="img/svg-icon/card-design.svg" alt="">
-            </div>
-            <div class="people-details">
-                <img src="img/gitprofile.jpg" class="managment-profile" alt="">
-                <p>yagnesh patel</p>
-                <p>Mahamantri of Society</p>
-                <div>
-                    <p><i class="fas fa-phone-alt"></i>+919876484789</p>
-                    <a href = "mailto: yagnesh6202patel@gmail.com"><i class="fas fa-envelope"></i>ypdeveloper1@gmail.com</a>
-                </div>
-            </div>
-           </div>
+          
+           
+         
        </div>
    </div>
    <!-- about-section -->
    <div id="about-section">
-       <p class="primary-heading">About Our society</p>
+       <h2 class="primary-heading">About Our society</h2>
        <div>
            <ul>
-               <p class="primary-heading" style="color: rgb(78,255,78);">HERITAGE CITY -THE GREEN CITY</p>
+               <p class="primary-heading" style="color: rgb(78,255,78); margin-bottom: 2rem;">HERITAGE CITY -THE GREEN CITY</p>
                <li>Lorem ipsum dolor sit amet conseclorem20
                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus atque nost lorem20
                     rum nulla quaerat aut harum quidem sapiente dicta minus. tetur adipisicing elit. Sed, qui?</li>
@@ -317,13 +283,13 @@
            <img src="img/hero-section.png" class="about-img"alt=""/>
        </div>
    </div>
+    </div>
    <!-- footer-section -->
    <div id="footer-section">
        <div class="society">
            <img src="img/logo.png" alt="">
            <p>HERITAGE CITY</p>
        </div>
-
        <div class="society-location">
       <h2>Society Location</h2>
       <p>Heritage city, thalota road visnagar -384315, mehsana ,gujrat India</p>
@@ -345,6 +311,7 @@
         <button type="submit" class="primary-btn">Send</button>
     </form>
     </div>
+    <p class="society-name-footer">HERITAGE CITY</p>
 </div>
 <p class="All-right-reserved">© 2021 90square by ©copyright  All Rights Reserved </p>
 </body>

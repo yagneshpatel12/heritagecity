@@ -1,0 +1,47 @@
+.navbar-section{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 2;
+    .nav-width{
+      width: 83vw;
+      margin: auto;
+      @include flexbox(space-between);
+      padding-top: 1rem;
+   .logo{
+    width: 8rem;
+    height: 7rem;
+   }
+   .hamburger{
+     display: none;
+   }
+   .menu{
+      li{
+        display: inline-block;
+        a{
+         margin: 0rem 2.3rem;
+         text-decoration: none;
+         @include Text-design(2.1rem,500,white);
+         transition: all .3s;
+         &:hover{
+          color: $main-color !important;
+          }
+        }
+      }
+      .login-btn{
+        color:$main-color;
+        font-size: 2.1rem;
+        padding: .8rem 2.3rem;
+        border-radius: 3rem;
+        background:transparent;
+        border: 1px solid $main-color;
+        transition: all .3s;
+        &:hover{
+        color: white;
+        cursor: pointer;
+        background-color:$main-color;
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,204 @@
-@media only screen and (max-width: 1475px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  scroll-behavior: smooth;
+}
+
+.primary-btn {
+  font-weight: 500;
+  background-color: #4ef515;
+  color: white;
+  border: 0.1rem solid #4ef515;
+}
+
+.primary-btn:hover {
+  background-color: #18b918;
+  cursor: pointer;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+.btn-link {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #424242;
+  transition: all .3s;
+}
+
+.btn-link i {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.btn-link:hover {
+  cursor: pointer;
+  color: #4ef515;
+}
+
+@media (max-width: 1475px) {
   html {
     font-size: 8px;
   }
 }
 
-@media only screen and (max-width: 1235px) {
+@media (max-width: 1235px) {
   html {
     font-size: 7.5px;
   }
-  #hero-section .search-section input {
-    width: 27vw;
+  #hero-section .search-section {
+    width: 40vw;
   }
   #hero-section .contactus-section {
     width: 50vw;
   }
 }
 
-@media only screen and (max-width: 1045px) {
+@media (max-width: 1045px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
+  }
+  .page-width {
+    width: 94vw;
+  }
+  .navbar-section .nav-width {
+    width: 94vw;
+  }
+  #footer-section .society-location iframe {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 972px) {
+  #footer-section {
+    justify-content: space-around;
+  }
+  #footer-section .society, #footer-section .society-name-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  html {
+    font-size: 6.5px;
+  }
+  .navbar-section .nav-width .hamburger {
+    display: inline;
+  }
+  .navbar-section .nav-width .hamburger i {
+    color: #4ef515;
+    font-size: 4rem;
+  }
+  .navbar-section .nav-width .menu {
+    display: none;
+  }
+  #hero-section .search-section {
+    width: 50vw;
+  }
+  #hero-section .contactus-section {
+    width: 60vw;
+  }
+  #footer-section .message-to-society {
+    width: 27vw;
+  }
+  #footer-section .society-location {
+    width: 27vw;
+  }
+  #footer-section .website-creators {
+    width: 27vw;
+  }
+}
+
+@media (max-width: 670px) {
+  #hero-section .search-section {
+    width: 60vw;
+  }
+  #hero-section .contactus-section {
+    width: 70vw;
+  }
+  .facilities-section .facilities-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .facilities-section .facilities-card-list .facilities-card {
+    width: 85%;
+  }
+  .society-gallery-section .carousel-cell {
+    max-width: 60%;
+    height: 33rem;
+  }
+  .notice-background .noticeboard-section ul {
+    width: 85%;
+  }
+  .society-members-articles .articles-section .article {
+    flex-direction: column;
+  }
+  .society-members-articles .articles-section .article img {
+    width: 85%;
+    margin-bottom: 3rem;
+    height: 33rem;
+  }
+  .society-members-articles .articles-section .article .article-details {
+    width: 85%;
+  }
+  #about-section div {
+    flex-direction: column-reverse;
+  }
+  #about-section div ul {
+    width: 80%;
+  }
+  #about-section div img {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  #footer-section {
+    flex-direction: row-reverse !important;
+    flex-wrap: wrap-reverse;
+  }
+  #footer-section .message-to-society {
+    margin: 5rem auto;
+    width: 85vw;
+  }
+  #footer-section .society-location {
+    width: 80vw;
+    margin: 5rem auto;
+  }
+  #footer-section .website-creators {
+    width: 80vw;
+    margin: 5rem auto;
+  }
+  #footer-section .society-name-footer {
+    display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  .society-gallery-section .carousel-cell {
+    max-width: 80%;
+    height: 33rem;
+  }
+  #hero-section .search-section {
+    width: 85vw;
+  }
+  #hero-section .contactus-section {
+    width: 85vw;
+    flex-direction: column;
+  }
+  #hero-section .contactus-section p {
+    width: 80%;
+    margin-bottom: 1rem;
   }
 }
