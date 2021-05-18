@@ -117,6 +117,7 @@ transform: rotateX(-0deg);
     }
     .services-list{
       list-style: none;
+      display:none;
       @include Text-design(2rem,500,$font-color);
       padding-left: 9rem;
       cursor: pointer;

@@ -858,6 +858,7 @@ html {
 
 .navbar-user .services-section .services-list {
   list-style: none;
+  display: none;
   font-size: 2rem;
   font-weight: 500;
   color: #424242;

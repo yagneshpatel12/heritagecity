@@ -35,7 +35,21 @@ navbar_down.addEventListener('click',()=>{
         navbar_user.style.display='none';
     }
 });
-
+//services 
+let services_down = document.getElementsByClassName('services-down')[0];
+services_down.addEventListener('click',()=>{
+    let services_list = document.getElementsByClassName('services-list')[0];
+    if(services_down.getAttribute('display')==='hidden'){
+    services_down.style.transform='rotate(180deg)';
+    services_list.style.display='list-item';
+    services_down.setAttribute('display','visible');
+}
+    else{
+        services_down.style.transform='rotate(0deg)';
+        services_down.setAttribute('display','hidden');
+        services_list.style.display='none';
+    }
+});
 //mpbile nav
 let hamburger = document.getElementsByClassName('hamburger')[0];
 hamburger.addEventListener('click',()=>{
