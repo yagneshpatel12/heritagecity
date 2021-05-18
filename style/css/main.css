@@ -788,6 +788,7 @@ html {
   z-index: 3;
   transform: rotateX(0deg);
   display: none;
+  height: 100%;
   animation: tr .4s;
 }
 
@@ -800,12 +801,22 @@ html {
   }
 }
 
+.navbar-user .cancel {
+  padding-top: 1rem;
+  display: none;
+  text-align: end;
+}
+
+.navbar-user .cancel i {
+  margin-right: 4rem;
+  color: #4ef515;
+  font-size: 4rem;
+}
+
 .navbar-user .user-information {
   width: 100%;
-  padding-bottom: 2rem;
+  padding: 0rem .5rem 2rem 2rem;
   margin-top: 3rem;
-  padding-left: 2rem;
-  padding-right: .5rem;
   border-bottom: 1px solid #d1d1d1;
   display: flex;
   justify-content: flex-start;
@@ -841,9 +852,10 @@ html {
   font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
-  margin-top: 2.2rem;
-  margin-bottom: 2.2rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
   cursor: pointer;
+  text-align: start;
 }
 
 .navbar-user .services-section p:hover {
@@ -854,28 +866,6 @@ html {
   margin-right: 2rem;
   margin-left: 1rem;
   font-size: 2.2rem;
-}
-
-.navbar-user .services-section .services-list {
-  list-style: none;
-  display: none;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #424242;
-  padding-left: 9rem;
-  cursor: pointer;
-}
-
-.navbar-user .services-section .services-list li {
-  margin: 1.5rem 0rem;
-}
-
-.navbar-user .services-section .services-list li:hover {
-  color: #4ef515;
-}
-
-.navbar-user .services-section .services-list li i {
-  margin-right: 1.8rem;
   width: 2rem;
   text-align: center;
 }
@@ -959,6 +949,9 @@ html {
   #footer-section .society-location iframe {
     height: 30vh;
   }
+  .navbar-user {
+    width: 30%;
+  }
 }
 
 @media (max-width: 972px) {
@@ -985,7 +978,19 @@ html {
     display: none;
   }
   .navbar-user {
-    width: 40%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    position: fixed;
+  }
+  .navbar-user .user-information {
+    margin-top: 0rem;
+  }
+  .navbar-user .cancel {
+    display: block;
   }
   #hero-section .search-section {
     width: 50vw;
@@ -1006,7 +1011,17 @@ html {
 
 @media (max-width: 670px) {
   .navbar-user {
+    height: 100%;
     width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    position: fixed;
+    font-size: 4rem;
+  }
+  .navbar-user .cancel {
+    padding-top: 0rem;
   }
   #hero-section .search-section {
     width: 60vw;
@@ -1091,5 +1106,17 @@ html {
   #hero-section .contactus-section p {
     width: 80%;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-user {
+    width: 85%;
+  }
+  #hero-section .search-section {
+    width: 94vw;
+  }
+  #hero-section .contactus-section {
+    width: 90vw;
   }
 }

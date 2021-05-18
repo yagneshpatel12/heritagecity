@@ -63,6 +63,7 @@
   z-index: 3;
   transform: rotateX(-0deg);
   display: none;
+  height: 100%;
   animation: tr .4s;
   @keyframes tr{
     from{
@@ -72,12 +73,21 @@ transform: rotateX(-45deg);
 transform: rotateX(-0deg);
     }
   }
+  .cancel{
+    padding-top: 1rem;
+    display: none;
+    text-align: end;
+    i{
+      margin-right: 4rem;
+      color: $main-color;
+      font-size: 4rem;
+
+    }
+  }
   .user-information{
     width: 100%;
-    padding-bottom: 2rem;
+    padding: 0rem .5rem 2rem 2rem;
     margin-top: 3rem;
-    padding-left: 2rem;
-    padding-right: .5rem;
     border-bottom: 1px solid rgb(209, 209, 209);
     @include flexbox(flex-start);
     img{
@@ -102,35 +112,19 @@ transform: rotateX(-0deg);
     p{
       padding-left: 2rem;
       @include Text-design(2.2rem,500,$font-color);
-      margin-top: 2.2rem;
-      margin-bottom: 2.2rem;
+      margin-top: 2.4rem;
+      margin-bottom: 2.4rem;
       cursor: pointer;
+      text-align: start;
       &:hover{
         color: $main-color;
       }
-      // border-bottom: 1px solid rgb(207, 207, 207);
       i{
         margin-right: 2rem;
         margin-left: 1rem;
         font-size: 2.2rem;
-      }
-    }
-    .services-list{
-      list-style: none;
-      display:none;
-      @include Text-design(2rem,500,$font-color);
-      padding-left: 9rem;
-      cursor: pointer;
-      li{
-        margin: 1.5rem 0rem;
-        &:hover{
-          color: $main-color;
-        }
-        i{
-          margin-right: 1.8rem;
-          width: 2rem;
-          text-align: center;
-        }
+        width: 2rem;
+        text-align: center;
       }
     }
   }

@@ -37,6 +37,9 @@
             }
         }
     }
+    .navbar-user{
+        width: 30%;
+    }
   }
   @media(max-width:972px){
       #footer-section{
@@ -45,11 +48,17 @@
               display: none;
           }
       }
+     
   }
   @media(max-width:860px){
       html{
           font-size: 6.5px;
       }
+.society-members-articles{
+    .articles-section{
+        margin-left: 0rem;
+    }
+}
       .navbar-section{
           .nav-width{
           .hamburger{
@@ -62,11 +71,24 @@
           .menu{
               display: none;
           }
+        
       }
       }
       .navbar-user{
-         width: 40%;
-      }
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 90;
+        position: fixed;
+        .user-information{
+            margin-top: 0rem;
+        }
+        .cancel{
+           display:block;
+        }
+    }
       #hero-section {
         .search-section{
                 width: 50vw;
@@ -90,7 +112,17 @@ width: 27vw;
 
   @media(max-width:670px){
       .navbar-user{
+          height: 100%;
           width: 50%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 90;
+          position: fixed;
+          font-size: 4rem;
+          .cancel{
+              padding-top: 0rem;
+          }
       }
     #hero-section {
         .search-section{
@@ -193,6 +225,20 @@ width: 80%;
                 width: 80%;
                 margin-bottom: 1rem;
             }
+        }
+    }
+  }
+  @media(max-width:360px){
+      .navbar-user{
+          width: 85%;
+      }
+      #hero-section {
+        .search-section{
+                width: 94vw;
+            }
+        
+        .contactus-section{
+            width: 90vw;
         }
     }
   }

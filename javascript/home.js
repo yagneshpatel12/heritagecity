@@ -35,33 +35,14 @@ navbar_down.addEventListener('click',()=>{
         navbar_user.style.display='none';
     }
 });
-//services 
-let services_down = document.getElementsByClassName('services-down')[0];
-services_down.addEventListener('click',()=>{
-    let services_list = document.getElementsByClassName('services-list')[0];
-    if(services_down.getAttribute('display')==='hidden'){
-    services_down.style.transform='rotate(180deg)';
-    services_list.style.display='list-item';
-    services_down.setAttribute('display','visible');
-}
-    else{
-        services_down.style.transform='rotate(0deg)';
-        services_down.setAttribute('display','hidden');
-        services_list.style.display='none';
-    }
-});
 //mpbile nav
 let hamburger = document.getElementsByClassName('hamburger')[0];
 hamburger.addEventListener('click',()=>{
     let navbar_user = document.getElementsByClassName('navbar-user')[0];
-    if(hamburger.getAttribute('display')==='hidden'){
-        hamburger.innerHTML='<i class="fas fa-times"></i>'
-      navbar_user.style.display='inline'
-    hamburger.setAttribute('display','visible');
-}
-    else{
- hamburger.innerHTML='<i class="fas fa-bars"></i>';
-        hamburger.setAttribute('display','hidden');
-        navbar_user.style.display='none';
-    }
+      navbar_user.style.display='inline';
 });
+let cancel = document.getElementsByClassName('cancel')[0];
+cancel.addEventListener('click',()=>{
+    let navbar_user = document.getElementsByClassName('navbar-user')[0];
+    navbar_user.style.display='none';
+})

@@ -77,6 +77,9 @@ html {
   #footer-section .society-location iframe {
     height: 30vh;
   }
+  .navbar-user {
+    width: 30%;
+  }
 }
 
 @media (max-width: 972px) {
@@ -92,6 +95,9 @@ html {
   html {
     font-size: 6.5px;
   }
+  .society-members-articles .articles-section {
+    margin-left: 0rem;
+  }
   .navbar-section .nav-width .hamburger {
     display: inline;
   }
@@ -103,7 +109,19 @@ html {
     display: none;
   }
   .navbar-user {
-    width: 40%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    position: fixed;
+  }
+  .navbar-user .user-information {
+    margin-top: 0rem;
+  }
+  .navbar-user .cancel {
+    display: block;
   }
   #hero-section .search-section {
     width: 50vw;
@@ -124,7 +142,17 @@ html {
 
 @media (max-width: 670px) {
   .navbar-user {
+    height: 100%;
     width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    position: fixed;
+    font-size: 4rem;
+  }
+  .navbar-user .cancel {
+    padding-top: 0rem;
   }
   #hero-section .search-section {
     width: 60vw;
@@ -209,5 +237,17 @@ html {
   #hero-section .contactus-section p {
     width: 80%;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-user {
+    width: 85%;
+  }
+  #hero-section .search-section {
+    width: 94vw;
+  }
+  #hero-section .contactus-section {
+    width: 90vw;
   }
 }
