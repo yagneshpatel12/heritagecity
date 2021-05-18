@@ -102,6 +102,9 @@ html {
   .navbar-section .nav-width .menu {
     display: none;
   }
+  .navbar-user {
+    width: 40%;
+  }
   #hero-section .search-section {
     width: 50vw;
   }
@@ -120,6 +123,9 @@ html {
 }
 
 @media (max-width: 670px) {
+  .navbar-user {
+    width: 50%;
+  }
   #hero-section .search-section {
     width: 60vw;
   }
@@ -186,6 +192,9 @@ html {
 }
 
 @media (max-width: 580px) {
+  .navbar-user {
+    width: 70%;
+  }
   .society-gallery-section .carousel-cell {
     max-width: 80%;
     height: 33rem;

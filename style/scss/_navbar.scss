@@ -14,6 +14,7 @@
    }
    .hamburger{
      display: none;
+     transition: all .5s;
    }
    .menu{
       li{
@@ -26,6 +27,13 @@
          &:hover{
           color: $main-color !important;
           }
+        }
+        .nav-icon{
+          font-size: 2rem;
+          margin-right: .5rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all .3s;
         }
       }
       .login-btn{
@@ -40,6 +48,87 @@
         color: white;
         cursor: pointer;
         background-color:$main-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar-user{
+  background-color: white;
+  position: fixed;
+  top:8rem;
+  right: 0.5rem;
+  width: 25%;
+  z-index: 3;
+  transform: rotateX(-0deg);
+  display: none;
+  animation: tr .4s;
+  @keyframes tr{
+    from{
+transform: rotateX(-45deg);
+    }
+    to{
+transform: rotateX(-0deg);
+    }
+  }
+  .user-information{
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: .5rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    @include flexbox(flex-start);
+    img{
+         height: 10rem;
+         width: 10rem;
+         border-radius: 50%;
+         margin-right: 2rem;
+    }
+    div{
+      .name{
+        text-align: start;
+       @include Text-design(2.5rem,700,$font-color);
+       margin-bottom: .5rem;
+      }
+      .address{
+        text-align: start;
+        @include Text-design(2rem,500,$font-color);
+      }
+    }
+  }
+  .services-section{
+    p{
+      padding-left: 2rem;
+      @include Text-design(2.2rem,500,$font-color);
+      margin-top: 2.2rem;
+      margin-bottom: 2.2rem;
+      cursor: pointer;
+      &:hover{
+        color: $main-color;
+      }
+      // border-bottom: 1px solid rgb(207, 207, 207);
+      i{
+        margin-right: 2rem;
+        margin-left: 1rem;
+        font-size: 2.2rem;
+      }
+    }
+    .services-list{
+      list-style: none;
+      @include Text-design(2rem,500,$font-color);
+      padding-left: 9rem;
+      cursor: pointer;
+      li{
+        margin: 1.5rem 0rem;
+        &:hover{
+          color: $main-color;
+        }
+        i{
+          margin-right: 1.8rem;
+          width: 2rem;
+          text-align: center;
         }
       }
     }

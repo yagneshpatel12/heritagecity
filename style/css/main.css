@@ -735,6 +735,7 @@ html {
 
 .navbar-section .nav-width .hamburger {
   display: none;
+  transition: all .5s;
 }
 
 .navbar-section .nav-width .menu li {
@@ -754,6 +755,14 @@ html {
   color: #4ef515 !important;
 }
 
+.navbar-section .nav-width .menu li .nav-icon {
+  font-size: 2rem;
+  margin-right: .5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s;
+}
+
 .navbar-section .nav-width .menu .login-btn {
   color: #4ef515;
   font-size: 2.1rem;
@@ -768,6 +777,106 @@ html {
   color: white;
   cursor: pointer;
   background-color: #4ef515;
+}
+
+.navbar-user {
+  background-color: white;
+  position: fixed;
+  top: 8rem;
+  right: 0.5rem;
+  width: 25%;
+  z-index: 3;
+  transform: rotateX(0deg);
+  display: none;
+  animation: tr .4s;
+}
+
+@keyframes tr {
+  from {
+    transform: rotateX(-45deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.navbar-user .user-information {
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+  padding-left: 2rem;
+  padding-right: .5rem;
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.navbar-user .user-information img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.navbar-user .user-information div .name {
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #424242;
+  margin-bottom: .5rem;
+}
+
+.navbar-user .user-information div .address {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.navbar-user .services-section p {
+  padding-left: 2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #424242;
+  margin-top: 2.2rem;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+.navbar-user .services-section p:hover {
+  color: #4ef515;
+}
+
+.navbar-user .services-section p i {
+  margin-right: 2rem;
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.navbar-user .services-section .services-list {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #424242;
+  padding-left: 9rem;
+  cursor: pointer;
+}
+
+.navbar-user .services-section .services-list li {
+  margin: 1.5rem 0rem;
+}
+
+.navbar-user .services-section .services-list li:hover {
+  color: #4ef515;
+}
+
+.navbar-user .services-section .services-list li i {
+  margin-right: 1.8rem;
+  width: 2rem;
+  text-align: center;
 }
 
 * {
@@ -874,6 +983,9 @@ html {
   .navbar-section .nav-width .menu {
     display: none;
   }
+  .navbar-user {
+    width: 40%;
+  }
   #hero-section .search-section {
     width: 50vw;
   }
@@ -892,6 +1004,9 @@ html {
 }
 
 @media (max-width: 670px) {
+  .navbar-user {
+    width: 50%;
+  }
   #hero-section .search-section {
     width: 60vw;
   }
@@ -958,6 +1073,9 @@ html {
 }
 
 @media (max-width: 580px) {
+  .navbar-user {
+    width: 70%;
+  }
   .society-gallery-section .carousel-cell {
     max-width: 80%;
     height: 33rem;

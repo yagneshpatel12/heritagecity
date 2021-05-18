@@ -64,6 +64,9 @@
           }
       }
       }
+      .navbar-user{
+         width: 40%;
+      }
       #hero-section {
         .search-section{
                 width: 50vw;
@@ -86,6 +89,9 @@ width: 27vw;
   }
 
   @media(max-width:670px){
+      .navbar-user{
+          width: 50%;
+      }
     #hero-section {
         .search-section{
                 width: 60vw;
@@ -165,6 +171,9 @@ width: 80%;
     }
   }
   @media(max-width:580px){
+      .navbar-user{
+          width: 70%;
+      }
     .society-gallery-section{
 
         .carousel-cell {
