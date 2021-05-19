@@ -13,9 +13,9 @@ html {
 
 .primary-btn {
   font-weight: 500;
-  background-color: #4ef515;
+  background-color: #50cc25;
   color: white;
-  border: 0.1rem solid #4ef515;
+  border: 0.1rem solid #50cc25;
 }
 
 .primary-btn:hover {
@@ -43,7 +43,7 @@ html {
 
 .btn-link:hover {
   cursor: pointer;
-  color: #4ef515;
+  color: #50cc25;
 }
 
 @media (max-width: 1475px) {

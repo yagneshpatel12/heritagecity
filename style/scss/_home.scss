@@ -150,39 +150,13 @@
    .flickity-button{
        color: $main-color;
        background-color: white;
-      //  width: 30px;
-      //  height: 30px;
     }
     .flickity-page-dots .dot{
        background: $main-color;
-      //  display: none;s
     }
-   // .carousel-cell {
-   //    margin-top: 5rem;
-   //    width: 66%;
-   //    height: 200px;
-   //    margin-right: 10px;
-   //    border-radius: 5px;
-   //    counter-increment: carousel-cell;
-   //    img{
-   //       height: 100%;
-   //       width: 100%;
-   //    }
-   // }    
-   //  .flickity-button{
-   //     color: $main-color;
-   //     background-color: white;
-   //     width: 30px;
-   //     height: 30px;
-   //  }
-   //  .flickity-page-dots .dot{
-   //     background: $main-color;
-   //     display: none;
-   //  }
-    
 }
 .notice-background{
-   background-color: rgb(78, 255, 78);
+   background-color:$main-color;
    @include flexbox(center,column,center);
    padding:1rem;
    margin-top: 15rem;
@@ -370,7 +344,7 @@
          width: 20rem;
       }
       p{
-         @include Text-design(6rem,700,rgb(78,255,78));
+         @include Text-design(6rem,700,$main-color);
       }
    }
    .message-to-society{
@@ -389,7 +363,7 @@
          border: 0.5px solid rgb(202, 202, 202);
          outline: none;
          &:active,&:hover{
-            border: 0.5px solid rgba(9, 246, 9, 0.815);
+            border: 0.5px solid $main-color;
          }
       }
       button{
