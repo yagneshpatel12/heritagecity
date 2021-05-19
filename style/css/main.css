@@ -849,7 +849,7 @@ html {
   color: #424242;
 }
 
-.navbar-user a {
+.navbar-user .desktop a, .navbar-user .mobile a {
   font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
@@ -860,7 +860,7 @@ html {
   text-decoration: none;
 }
 
-.navbar-user a i {
+.navbar-user .desktop a i, .navbar-user .mobile a i {
   margin-right: 2rem;
   margin-left: 2rem;
   font-size: 2.2rem;
@@ -868,9 +868,31 @@ html {
   text-align: center;
 }
 
-.navbar-user a:hover {
+.navbar-user .desktop a:hover, .navbar-user .mobile a:hover {
   color: white !important;
   background-color: #4ef515;
+}
+
+.navbar-user .mobile {
+  display: none;
+}
+
+.navbar-user .mobile .login-mobile-btn {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid #4ef515;
+  color: #4ef515;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.navbar-user .mobile .login-mobile-btn:hover {
+  background-color: #4ef515;
+  color: white;
 }
 
 * {
@@ -987,6 +1009,12 @@ html {
   .navbar-user .cancel {
     display: block;
   }
+  .navbar-user .desktop {
+    display: none;
+  }
+  .navbar-user .mobile {
+    display: block;
+  }
   #hero-section .search-section {
     width: 43vw;
   }
@@ -1058,6 +1086,20 @@ html {
   }
   #footer-section .society-name-footer {
     display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .society-gallery-section .carousel-cell {
+    width: 66%;
+    height: 200px;
+  }
+  .society-gallery-section .flickity-button {
+    width: 30px;
+    height: 30px;
+  }
+  .society-gallery-section .flickity-page-dots .dot {
+    display: none;
   }
 }
 

@@ -113,6 +113,7 @@ transform: rotateX(-0deg);
       }
     }
   }
+  .desktop,.mobile{
     a{
       @include Text-design(2.2rem,500,$font-color);
       padding: 2rem;
@@ -132,5 +133,24 @@ transform: rotateX(-0deg);
         background-color: $main-color;
       }
     }
-  
+  }
+  .mobile{
+    display: none;
+    .login-mobile-btn{
+        width: 100%;
+        text-align: center;
+        font-size: 2.2rem;
+        padding: 1rem;
+        font-weight: 600;
+        outline: none;
+        border: 1px solid $main-color;
+        color: $main-color;
+        background-color: white;
+        margin-top: 2rem;
+        &:hover{
+          background-color: $main-color;
+          color: white;
+        }
+    }
+  }
 }

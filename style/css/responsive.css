@@ -112,6 +112,12 @@ html {
   .navbar-user .cancel {
     display: block;
   }
+  .navbar-user .desktop {
+    display: none;
+  }
+  .navbar-user .mobile {
+    display: block;
+  }
   #hero-section .search-section {
     width: 43vw;
   }
