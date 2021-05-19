@@ -13,9 +13,9 @@ html {
 
 .primary-btn {
   font-weight: 500;
-  background-color: #50cc25;
+  background-color: #4ec724;
   color: white;
-  border: 0.1rem solid #50cc25;
+  border: 0.1rem solid #4ec724;
 }
 
 .primary-btn:hover {
@@ -43,7 +43,7 @@ html {
 
 .btn-link:hover {
   cursor: pointer;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 #hero-section {
@@ -166,14 +166,14 @@ html {
   padding: .8rem 1.5rem;
   font-size: 3rem;
   font-weight: 500;
-  color: #50cc25;
+  color: #4ec724;
   transition: all .5s;
 }
 
 #hero-section .contactus-section button:hover {
   cursor: pointer;
   color: white;
-  background-color: #50cc25;
+  background-color: #4ec724;
 }
 
 .page-width {
@@ -224,7 +224,7 @@ html {
 .facilities-section .facilities-card-list .facilities-card div .card-heading {
   font-size: 2.8rem;
   font-weight: 600;
-  color: #50cc25;
+  color: #4ec724;
   margin-bottom: 1rem;
 }
 
@@ -260,16 +260,16 @@ html {
 }
 
 .society-gallery-section .flickity-button {
-  color: #50cc25;
+  color: #4ec724;
   background-color: white;
 }
 
 .society-gallery-section .flickity-page-dots .dot {
-  background: #50cc25;
+  background: #4ec724;
 }
 
 .notice-background {
-  background-color: #50cc25;
+  background-color: #4ec724;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,7 +283,7 @@ html {
   width: 100%;
   border-radius: 1rem;
   border: 1rem solid white;
-  background-color: #50cc25;
+  background-color: #4ec724;
   padding: 3rem 0rem;
   color: white;
   display: flex;
@@ -361,7 +361,7 @@ html {
 .society-members-articles .articles-section .article .article-details .article-discription a {
   font-size: 2rem;
   font-weight: 600;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 .society-members-articles .articles-section .article .article-details p {
@@ -490,7 +490,7 @@ html {
 }
 
 .managment-peoples-section .managment-peoples .peoples-card .contact i {
-  color: #50cc25;
+  color: #4ec724;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
@@ -559,7 +559,7 @@ html {
 #footer-section .society p {
   font-size: 6rem;
   font-weight: 700;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 #footer-section .message-to-society {
@@ -585,7 +585,7 @@ html {
 }
 
 #footer-section .message-to-society input:active, #footer-section .message-to-society input:hover, #footer-section .message-to-society textarea:active, #footer-section .message-to-society textarea:hover {
-  border: 0.5px solid #50cc25;
+  border: 0.5px solid #4ec724;
 }
 
 #footer-section .message-to-society button {
@@ -643,7 +643,7 @@ html {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
-  color: #50cc25;
+  color: #4ec724;
   display: none;
 }
 
@@ -671,9 +671,9 @@ html {
 
 .primary-btn {
   font-weight: 500;
-  background-color: #50cc25;
+  background-color: #4ec724;
   color: white;
-  border: 0.1rem solid #50cc25;
+  border: 0.1rem solid #4ec724;
 }
 
 .primary-btn:hover {
@@ -701,7 +701,7 @@ html {
 
 .btn-link:hover {
   cursor: pointer;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 .navbar-section {
@@ -733,7 +733,7 @@ html {
 }
 
 .navbar-section .nav-width .hamburger i {
-  color: #50cc25;
+  color: white;
   font-size: 4rem;
 }
 
@@ -751,7 +751,7 @@ html {
 }
 
 .navbar-section .nav-width .menu li a:hover {
-  color: #50cc25 !important;
+  color: #4ec724 !important;
 }
 
 .navbar-section .nav-width .menu li .nav-icon {
@@ -763,22 +763,22 @@ html {
 }
 
 .navbar-section .nav-width .menu .login-btn {
-  color: #50cc25;
+  color: #4ec724;
   font-size: 2.1rem;
   padding: .8rem 2.3rem;
   border-radius: 3rem;
   background: transparent;
-  border: 1px solid #50cc25;
+  border: 1px solid #4ec724;
   transition: all .3s;
 }
 
 .navbar-section .nav-width .menu .login-btn:hover {
   color: white;
   cursor: pointer;
-  background-color: #50cc25;
+  background-color: #4ec724;
 }
 
-.navbar-user {
+.sidebar {
   background-color: white;
   color: white;
   position: fixed;
@@ -803,19 +803,19 @@ html {
   }
 }
 
-.navbar-user .cancel {
+.sidebar .cancel {
   padding-top: 1rem;
   display: none;
   text-align: end;
 }
 
-.navbar-user .cancel i {
+.sidebar .cancel i {
   margin-right: 2rem;
-  color: #50cc25;
+  color: #4ec724;
   font-size: 4rem;
 }
 
-.navbar-user .user-information {
+.sidebar .user-information {
   width: 100%;
   padding: 0rem .5rem 2rem 2rem;
   margin-top: 3rem;
@@ -827,14 +827,14 @@ html {
   text-align: center;
 }
 
-.navbar-user .user-information img {
+.sidebar .user-information img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   margin-right: 2rem;
 }
 
-.navbar-user .user-information div .name {
+.sidebar .user-information div .name {
   text-align: start;
   font-size: 2.6rem;
   font-weight: 700;
@@ -842,14 +842,14 @@ html {
   margin-bottom: .5rem;
 }
 
-.navbar-user .user-information div .address {
+.sidebar .user-information div .address {
   text-align: start;
   font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
 }
 
-.navbar-user .desktop a, .navbar-user .mobile a {
+.sidebar .desktop a, .sidebar .mobile a {
   font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
@@ -860,7 +860,7 @@ html {
   text-decoration: none;
 }
 
-.navbar-user .desktop a i, .navbar-user .mobile a i {
+.sidebar .desktop a i, .sidebar .mobile a i {
   margin-right: 2rem;
   margin-left: 2rem;
   font-size: 2.2rem;
@@ -868,30 +868,30 @@ html {
   text-align: center;
 }
 
-.navbar-user .desktop a:hover, .navbar-user .mobile a:hover {
+.sidebar .desktop a:hover, .sidebar .mobile a:hover {
   color: white !important;
-  background-color: #50cc25;
+  background-color: #4ec724;
 }
 
-.navbar-user .mobile {
+.sidebar .mobile {
   display: none;
 }
 
-.navbar-user .mobile .login-mobile-btn {
+.sidebar .mobile .login-mobile-btn {
   width: 100%;
   text-align: center;
   font-size: 2.2rem;
   padding: 1rem;
   font-weight: 600;
   outline: none;
-  border: 1px solid #50cc25;
-  color: #50cc25;
+  border: 1px solid #4ec724;
+  color: #4ec724;
   background-color: white;
   margin-top: 2rem;
 }
 
-.navbar-user .mobile .login-mobile-btn:hover {
-  background-color: #50cc25;
+.sidebar .mobile .login-mobile-btn:hover {
+  background-color: #4ec724;
   color: white;
 }
 
@@ -910,9 +910,9 @@ html {
 
 .primary-btn {
   font-weight: 500;
-  background-color: #50cc25;
+  background-color: #4ec724;
   color: white;
-  border: 0.1rem solid #50cc25;
+  border: 0.1rem solid #4ec724;
 }
 
 .primary-btn:hover {
@@ -940,14 +940,14 @@ html {
 
 .btn-link:hover {
   cursor: pointer;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 @media (max-width: 1475px) {
   html {
     font-size: 8px;
   }
-  .navbar-user {
+  .sidebar {
     width: 30%;
   }
 }
@@ -995,7 +995,7 @@ html {
   .navbar-section .nav-width .menu {
     display: none;
   }
-  .navbar-user {
+  .sidebar {
     width: 40%;
     position: absolute;
     top: 0;
@@ -1003,16 +1003,16 @@ html {
     z-index: 4;
     position: fixed;
   }
-  .navbar-user .user-information {
+  .sidebar .user-information {
     margin-top: 0rem;
   }
-  .navbar-user .cancel {
+  .sidebar .cancel {
     display: block;
   }
-  .navbar-user .desktop {
+  .sidebar .desktop {
     display: none;
   }
-  .navbar-user .mobile {
+  .sidebar .mobile {
     display: block;
   }
   #hero-section .search-section {
@@ -1033,11 +1033,11 @@ html {
 }
 
 @media (max-width: 670px) {
-  .navbar-user {
+  .sidebar {
     width: 45%;
     font-size: 4rem;
   }
-  .navbar-user .cancel {
+  .sidebar .cancel {
     padding-top: 0rem;
   }
   #hero-section .search-section {
@@ -1104,7 +1104,7 @@ html {
 }
 
 @media (max-width: 580px) {
-  .navbar-user {
+  .sidebar {
     width: 65%;
   }
   .facilities-section .facilities-card-list {
@@ -1123,7 +1123,7 @@ html {
 }
 
 @media (max-width: 360px) {
-  .navbar-user {
+  .sidebar {
     width: 75%;
   }
   #hero-section .search-section {

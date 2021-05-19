@@ -15,24 +15,29 @@
 </head>
 <body>
 
-    <!--navbar without login -->
+    <!--navbar -section-->
     <nav class="navbar-section">
         <div class="nav-width">
             <img src="img/logo.png" alt="society-logo" class="logo">
+            <!-- Hamburger icon -->
             <div class="hamburger"><i class="fas fa-bars"></i></div>
             <ul class="menu">
                 <li><a class="color-change" href="#hero-section">Home</a></li>
                 <li><a class="color-change" href="#about-section">About</a></li>
                 <li><a class="color-change" href="#">Blog</a></li>
                 <li><a class="color-change" href="#footer-section">Contact</a></li>
-                <!-- Login button -->
-                <!-- <li><a href="login.html"><button class="login-btn">Login</button></a></li> -->
-                <!-- user -->
+
+                <!-- for desktop -->
+                <!-- if user not login then show login button(uncomment below login button ) -->
+                           <!-- Login button -->
+                           <!-- <li><a href="login.html"><button class="login-btn">Login</button></a></li> -->
+                <!-- Else user login then show below -->
+                <!-- user login icon -->
                 <li><i class="fas fa-user nav-icon color-change" style="color: white;"></i><i class="fas fa-angle-down nav-icon color-change navbar-down" display='hidden' style="color: white;"></i></li>
             </ul>
         </div>
     </nav>
-    <div class="navbar-user">
+    <div class="sidebar">
         <div class="cancel"><i class="fas fa-times" ></i></div>
         <div class="user-information">
             <img src="img/gitprofile.jpg" alt="user-photo">
@@ -55,7 +60,10 @@
             <a href="#"><i class="far fa-address-card"></i>About</a>
             <a href="#"><i class="fab fa-blogger"></i>Blog</a>
             <a href="#"><i class="fas fa-id-card-alt"></i>Contact</a> 
-            <!-- <button class="login-mobile-btn">Login</button> -->
+            <!-- for Mobile -->
+                <!-- if user not login then show login button(uncomment below login button ) -->
+                    <!-- <button class="login-mobile-btn">Login</button> -->
+                <!-- else user login show below code -->
             <a href="#"><i class="far fa-user-circle"></i>Manage Profile</a>
             <a href="#"><i class="fas fa-user-friends"></i>All members</a>
             <a href="#"><i class="fas fa-user-cog"></i>Maintenance</a>

@@ -3,7 +3,7 @@
     html{
         font-size:8px;
     }
-    .navbar-user{
+    .sidebar{
         width: 30%;
     }
   }
@@ -59,7 +59,7 @@
            }
           }
       }
-      .navbar-user{
+      .sidebar{
         width: 40%;
         position: absolute;
         top: 0;
@@ -103,7 +103,7 @@
   }
 
   @media(max-width:670px){
-      .navbar-user{
+      .sidebar{
           width: 45%;
           font-size: 4rem;
           .cancel{
@@ -184,7 +184,7 @@
     }
   }
   @media(max-width:580px){
-      .navbar-user{
+      .sidebar{
           width: 65%;
       }
       .facilities-section{
@@ -203,7 +203,7 @@
     }
   }
   @media(max-width:360px){
-      .navbar-user{
+      .sidebar{
           width: 75%;
       }
       #hero-section {

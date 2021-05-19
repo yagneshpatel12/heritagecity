@@ -13,9 +13,9 @@ html {
 
 .primary-btn {
   font-weight: 500;
-  background-color: #50cc25;
+  background-color: #4ec724;
   color: white;
-  border: 0.1rem solid #50cc25;
+  border: 0.1rem solid #4ec724;
 }
 
 .primary-btn:hover {
@@ -43,14 +43,14 @@ html {
 
 .btn-link:hover {
   cursor: pointer;
-  color: #50cc25;
+  color: #4ec724;
 }
 
 @media (max-width: 1475px) {
   html {
     font-size: 8px;
   }
-  .navbar-user {
+  .sidebar {
     width: 30%;
   }
 }
@@ -98,7 +98,7 @@ html {
   .navbar-section .nav-width .menu {
     display: none;
   }
-  .navbar-user {
+  .sidebar {
     width: 40%;
     position: absolute;
     top: 0;
@@ -106,16 +106,16 @@ html {
     z-index: 4;
     position: fixed;
   }
-  .navbar-user .user-information {
+  .sidebar .user-information {
     margin-top: 0rem;
   }
-  .navbar-user .cancel {
+  .sidebar .cancel {
     display: block;
   }
-  .navbar-user .desktop {
+  .sidebar .desktop {
     display: none;
   }
-  .navbar-user .mobile {
+  .sidebar .mobile {
     display: block;
   }
   #hero-section .search-section {
@@ -136,11 +136,11 @@ html {
 }
 
 @media (max-width: 670px) {
-  .navbar-user {
+  .sidebar {
     width: 45%;
     font-size: 4rem;
   }
-  .navbar-user .cancel {
+  .sidebar .cancel {
     padding-top: 0rem;
   }
   #hero-section .search-section {
@@ -207,7 +207,7 @@ html {
 }
 
 @media (max-width: 580px) {
-  .navbar-user {
+  .sidebar {
     width: 65%;
   }
   .facilities-section .facilities-card-list {
@@ -226,7 +226,7 @@ html {
 }
 
 @media (max-width: 360px) {
-  .navbar-user {
+  .sidebar {
     width: 75%;
   }
   #hero-section .search-section {
