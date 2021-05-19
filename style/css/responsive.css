@@ -53,23 +53,11 @@ html {
   .navbar-user {
     width: 30%;
   }
-  #hero-section .contactus-section {
-    width: 40vw;
-  }
 }
 
 @media (max-width: 1235px) {
   html {
     font-size: 7.5px;
-  }
-  #hero-section .search-section {
-    width: 40vw;
-  }
-  #hero-section .contactus-section {
-    width: 50vw;
-  }
-  .navbar-user {
-    width: 35%;
   }
 }
 
@@ -86,20 +74,17 @@ html {
   #footer-section .society-location iframe {
     height: 30vh;
   }
-  .navbar-user {
-    width: 38%;
-  }
 }
 
 @media (max-width: 972px) {
+  #hero-section .search-section {
+    width: 38vw;
+  }
   #footer-section {
     justify-content: space-around;
   }
   #footer-section .society, #footer-section .society-name-footer {
     display: none;
-  }
-  .navbar-user {
-    width: 40%;
   }
 }
 
@@ -107,26 +92,18 @@ html {
   html {
     font-size: 6.5px;
   }
-  .society-members-articles .articles-section {
-    margin-left: 0rem;
-  }
   .navbar-section .nav-width .hamburger {
     display: inline;
-  }
-  .navbar-section .nav-width .hamburger i {
-    color: #4ef515;
-    font-size: 4rem;
   }
   .navbar-section .nav-width .menu {
     display: none;
   }
   .navbar-user {
-    height: 100%;
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 90;
+    z-index: 4;
     position: fixed;
   }
   .navbar-user .user-information {
@@ -136,10 +113,10 @@ html {
     display: block;
   }
   #hero-section .search-section {
-    width: 50vw;
+    width: 43vw;
   }
-  #hero-section .contactus-section {
-    width: 60vw;
+  .society-members-articles .articles-section {
+    margin-left: 0rem;
   }
   #footer-section .message-to-society {
     width: 27vw;
@@ -154,23 +131,14 @@ html {
 
 @media (max-width: 670px) {
   .navbar-user {
-    height: 100%;
-    width: 60%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 90;
-    position: fixed;
+    width: 45%;
     font-size: 4rem;
   }
   .navbar-user .cancel {
     padding-top: 0rem;
   }
   #hero-section .search-section {
-    width: 60vw;
-  }
-  #hero-section .contactus-section {
-    width: 70vw;
+    width: 55vw;
   }
   .facilities-section .facilities-card-list {
     display: flex;
@@ -181,10 +149,6 @@ html {
   }
   .facilities-section .facilities-card-list .facilities-card {
     width: 85%;
-  }
-  .society-gallery-section .carousel-cell {
-    max-width: 60%;
-    height: 33rem;
   }
   .notice-background .noticeboard-section ul {
     width: 85%;
@@ -211,55 +175,55 @@ html {
     margin-bottom: 2rem;
   }
   #footer-section {
-    flex-direction: row-reverse !important;
     flex-wrap: wrap-reverse;
   }
-  #footer-section .message-to-society {
+  #footer-section .message-to-society, #footer-section .society-location, #footer-section .website-creators {
     margin: 5rem auto;
     width: 85vw;
-  }
-  #footer-section .society-location {
-    width: 80vw;
-    margin: 5rem auto;
-  }
-  #footer-section .website-creators {
-    width: 80vw;
-    margin: 5rem auto;
   }
   #footer-section .society-name-footer {
     display: flex;
   }
 }
 
+@media (max-width: 700px) {
+  .society-gallery-section .carousel-cell {
+    width: 66%;
+    height: 200px;
+  }
+  .society-gallery-section .flickity-button {
+    width: 30px;
+    height: 30px;
+  }
+  .society-gallery-section .flickity-page-dots .dot {
+    display: none;
+  }
+}
+
 @media (max-width: 580px) {
   .navbar-user {
-    width: 80%;
+    width: 65%;
   }
-  .society-gallery-section .carousel-cell {
-    max-width: 80%;
-    height: 33rem;
+  .facilities-section .facilities-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .facilities-section .facilities-card-list .facilities-card {
+    width: 95%;
   }
   #hero-section .search-section {
-    width: 85vw;
-  }
-  #hero-section .contactus-section {
-    width: 85vw;
-    flex-direction: column;
-  }
-  #hero-section .contactus-section p {
-    width: 80%;
-    margin-bottom: 1rem;
+    width: 70vw;
   }
 }
 
 @media (max-width: 360px) {
   .navbar-user {
-    width: 85%;
+    width: 75%;
   }
   #hero-section .search-section {
-    width: 94vw;
-  }
-  #hero-section .contactus-section {
-    width: 90vw;
+    width: 93vw;
   }
 }

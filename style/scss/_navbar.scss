@@ -1,4 +1,3 @@
-
 .navbar-section{
     width: 100%;
     position: fixed;
@@ -16,6 +15,10 @@
    .hamburger{
      display: none;
      transition: all .5s;
+     i{
+      color: $main-color;
+      font-size: 4rem;
+     }
    }
    .menu{
       li{
@@ -54,7 +57,6 @@
     }
   }
 }
-
 .navbar-user{
   background-color:white;
   color: white;
@@ -82,10 +84,9 @@ transform: rotateX(-0deg);
     display: none;
     text-align: end;
     i{
-      margin-right: 4rem;
+      margin-right: 2rem;
       color: $main-color;
       font-size: 4rem;
-
     }
   }
   .user-information{
@@ -103,28 +104,27 @@ transform: rotateX(-0deg);
     div{
       .name{
         text-align: start;
-       @include Text-design(26px,700,$font-color);
+       @include Text-design(2.6rem,700,$font-color);
        margin-bottom: .5rem;
       }
       .address{
         text-align: start;
-        @include Text-design(21px,500,$font-color);
+        @include Text-design(2.2rem,500,$font-color);
       }
     }
   }
-  .services-section{
     a{
-      @include Text-design(21px,500,$font-color);
-      padding: 2.4rem 2rem;
+      @include Text-design(2.2rem,500,$font-color);
+      padding: 2rem;
       cursor: pointer;
       text-align: start;
       display: block;
       text-decoration: none;
       i{
-        margin-right: 20px;
-        margin-left: 10px;
-        font-size: 21px;
-        width: 21px;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-size: 2.2rem;
+        width: 2.2rem;
         text-align: center;
       }
       &:hover{ 
@@ -132,5 +132,5 @@ transform: rotateX(-0deg);
         background-color: $main-color;
       }
     }
-  }
+  
 }

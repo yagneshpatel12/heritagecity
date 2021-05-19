@@ -6,27 +6,10 @@
     .navbar-user{
         width: 30%;
     }
-    #hero-section{
-        .contactus-section{
-            width: 40vw;
-        }
-    }
   }
   @media(max-width:1235px) {
     html{
         font-size:7.5px;
-    }
-    #hero-section {
-        .search-section{
-                width: 40vw;
-            }
-        
-        .contactus-section{
-            width: 50vw;
-        }
-    }
-    .navbar-user{
-     width: 35%;
     }
   }
   @media(max-width:1045px) {
@@ -48,53 +31,40 @@
             }
         }
     }
-    .navbar-user{
-        width: 38%;
-    }
   }
   @media(max-width:972px){
+      #hero-section{
+          .search-section{
+              width: 38vw;
+          }
+      }
       #footer-section{
           justify-content: space-around;
           .society,.society-name-footer{
               display: none;
           }
       }
-      .navbar-user{
-          width: 40%;
-      }
-     
   }
   @media(max-width:860px){
       html{
           font-size: 6.5px;
-      }
-.society-members-articles{
-    .articles-section{
-        margin-left: 0rem;
-    }
-}
+      } 
       .navbar-section{
           .nav-width{
           .hamburger{
               display: inline;
-              i{
-                  color: $main-color;
-                  font-size: 4rem;
-              }
           }
           .menu{
               display: none;
+           }
           }
-        
-      }
       }
       .navbar-user{
-        height: 100%;
-        width: 50%;
+        width: 40%;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 90;
+        z-index: 4;
         position: fixed;
         .user-information{
             margin-top: 0rem;
@@ -103,36 +73,32 @@
            display:block;
         }
     }
-      #hero-section {
+    #hero-section {
         .search-section{
-                width: 50vw;
+                width: 43vw;
             }
-        .contactus-section{
-            width: 60vw;
+      }
+      .society-members-articles{
+        .articles-section{
+          margin-left: 0rem;
         }
-    }
+      }
     #footer-section{
         .message-to-society{
             width: 27vw;
         }
         .society-location{
-        width: 27vw;
+          width: 27vw;
         }
         .website-creators{
-width: 27vw;
+          width: 27vw;
         }
     }
   }
 
   @media(max-width:670px){
       .navbar-user{
-          height: 100%;
-          width: 60%;
-          position: absolute;
-          top: 0;
-          right: 0;
-          z-index: 90;
-          position: fixed;
+          width: 45%;
           font-size: 4rem;
           .cancel{
               padding-top: 0rem;
@@ -140,12 +106,8 @@ width: 27vw;
       }
     #hero-section {
         .search-section{
-                width: 60vw;
+                width: 55vw;
             }
-        
-        .contactus-section{
-            width: 70vw;
-        }
     }
     .facilities-section{
         .facilities-card-list{
@@ -155,13 +117,6 @@ width: 27vw;
         }
     }
     }
-    .society-gallery-section{
-
-        .carousel-cell {
-            max-width: 60%;
-            height: 33rem;
-    }
-}
     .notice-background{
         .noticeboard-section{
             ul{
@@ -188,7 +143,7 @@ width: 27vw;
         div{
             flex-direction:column-reverse;
             ul{
-width: 80%;
+              width: 80%;
             }
             img{
                 width: 80%;
@@ -197,62 +152,57 @@ width: 80%;
         }
     }
     #footer-section{
-        flex-direction: row-reverse !important;
         flex-wrap: wrap-reverse;
-        .message-to-society{
+        .message-to-society,.society-location,.website-creators{
             margin: 5rem auto;
             width: 85vw;
-        }
-        .society-location{
-        width: 80vw;
-        margin: 5rem auto;
-        }
-        .website-creators{
-         width: 80vw;
-         margin: 5rem auto;
         }
         .society-name-footer{
             display: flex;
         }
     }
   }
+  @media(max-width:700px){
+    .society-gallery-section{
+        .carousel-cell {
+            width: 66%;
+            height: 200px;
+        }
+        .flickity-button{
+            width: 30px;
+            height: 30px;
+         }
+         .flickity-page-dots .dot{
+            display: none;
+         }
+    }
+  }
   @media(max-width:580px){
       .navbar-user{
-          width: 80%;
+          width: 65%;
       }
-    .society-gallery-section{
-
-        .carousel-cell {
-            max-width: 80%;
-            height: 33rem;
+      .facilities-section{
+        .facilities-card-list{
+            @include flexbox(center,column);
+        .facilities-card{
+            width: 95%;
+        }
     }
+    
 }
     #hero-section {
         .search-section{
-                width: 85vw;
+                width: 70vw;
             }
-        
-        .contactus-section{
-            width: 85vw;
-            flex-direction: column;
-            p{
-                width: 80%;
-                margin-bottom: 1rem;
-            }
-        }
     }
   }
   @media(max-width:360px){
       .navbar-user{
-          width: 85%;
+          width: 75%;
       }
       #hero-section {
         .search-section{
-                width: 94vw;
+                width: 93vw;
             }
-        
-        .contactus-section{
-            width: 90vw;
-        }
     }
   }

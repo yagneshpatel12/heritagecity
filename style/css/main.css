@@ -139,6 +139,7 @@ html {
 }
 
 #hero-section .contactus-section {
+  width: 100%;
   margin-top: 2.5rem;
   background-color: #00000057;
   display: flex;
@@ -146,15 +147,13 @@ html {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  width: 38vw;
+  flex-wrap: wrap;
   padding: 1.5rem 2rem;
   border-radius: .5rem;
-  margin: 2.5rem auto 0rem auto;
 }
 
-#hero-section .contactus-section p {
-  width: 55%;
-  margin: 0rem 3rem 0rem 0rem;
+#hero-section .contactus-section div p {
+  margin-right: 3rem;
   font-size: 3rem;
   font-weight: 500;
   color: yellow;
@@ -179,7 +178,6 @@ html {
 
 .page-width {
   width: 83vw;
-  height: auto;
   margin: auto;
 }
 
@@ -244,11 +242,21 @@ html {
 .society-gallery-section {
   margin-top: 12rem;
   text-align: center;
+  height: auto;
 }
 
-.society-gallery-section .carousel {
+.society-gallery-section .carousel-cell {
+  margin-top: 5rem;
+  width: 28%;
+  height: 280px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.society-gallery-section .carousel-cell img {
+  height: 100%;
   width: 100%;
-  margin: 7rem auto;
 }
 
 .society-gallery-section .flickity-button {
@@ -258,19 +266,6 @@ html {
 
 .society-gallery-section .flickity-page-dots .dot {
   background: #4ef515;
-}
-
-.society-gallery-section .carousel-cell {
-  width: 28%;
-  height: 33rem;
-  margin-right: 1.5rem;
-  counter-increment: carousel-cell;
-}
-
-.society-gallery-section .carousel-cell img {
-  border-radius: .5rem;
-  height: 100%;
-  width: 100%;
 }
 
 .notice-background {
@@ -440,7 +435,6 @@ html {
   margin: 2rem 4rem;
   padding: .5rem;
   width: 30rem;
-  height: auto;
   padding-bottom: 2rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -738,6 +732,11 @@ html {
   transition: all .5s;
 }
 
+.navbar-section .nav-width .hamburger i {
+  color: #4ef515;
+  font-size: 4rem;
+}
+
 .navbar-section .nav-width .menu li {
   display: inline-block;
 }
@@ -811,7 +810,7 @@ html {
 }
 
 .navbar-user .cancel i {
-  margin-right: 4rem;
+  margin-right: 2rem;
   color: #4ef515;
   font-size: 4rem;
 }
@@ -837,7 +836,7 @@ html {
 
 .navbar-user .user-information div .name {
   text-align: start;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #424242;
   margin-bottom: .5rem;
@@ -845,31 +844,31 @@ html {
 
 .navbar-user .user-information div .address {
   text-align: start;
-  font-size: 21px;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
 }
 
-.navbar-user .services-section a {
-  font-size: 21px;
+.navbar-user a {
+  font-size: 2.2rem;
   font-weight: 500;
   color: #424242;
-  padding: 2.4rem 2rem;
+  padding: 2rem;
   cursor: pointer;
   text-align: start;
   display: block;
   text-decoration: none;
 }
 
-.navbar-user .services-section a i {
-  margin-right: 20px;
-  margin-left: 10px;
-  font-size: 21px;
-  width: 21px;
+.navbar-user a i {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 2.2rem;
+  width: 2.2rem;
   text-align: center;
 }
 
-.navbar-user .services-section a:hover {
+.navbar-user a:hover {
   color: white !important;
   background-color: #4ef515;
 }
@@ -935,12 +934,6 @@ html {
   html {
     font-size: 7.5px;
   }
-  #hero-section .search-section {
-    width: 40vw;
-  }
-  #hero-section .contactus-section {
-    width: 50vw;
-  }
 }
 
 @media (max-width: 1045px) {
@@ -956,12 +949,12 @@ html {
   #footer-section .society-location iframe {
     height: 30vh;
   }
-  .navbar-user {
-    width: 30%;
-  }
 }
 
 @media (max-width: 972px) {
+  #hero-section .search-section {
+    width: 38vw;
+  }
   #footer-section {
     justify-content: space-around;
   }
@@ -974,26 +967,18 @@ html {
   html {
     font-size: 6.5px;
   }
-  .society-members-articles .articles-section {
-    margin-left: 0rem;
-  }
   .navbar-section .nav-width .hamburger {
     display: inline;
-  }
-  .navbar-section .nav-width .hamburger i {
-    color: #4ef515;
-    font-size: 4rem;
   }
   .navbar-section .nav-width .menu {
     display: none;
   }
   .navbar-user {
-    height: 100%;
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 90;
+    z-index: 4;
     position: fixed;
   }
   .navbar-user .user-information {
@@ -1003,10 +988,10 @@ html {
     display: block;
   }
   #hero-section .search-section {
-    width: 50vw;
+    width: 43vw;
   }
-  #hero-section .contactus-section {
-    width: 60vw;
+  .society-members-articles .articles-section {
+    margin-left: 0rem;
   }
   #footer-section .message-to-society {
     width: 27vw;
@@ -1021,23 +1006,14 @@ html {
 
 @media (max-width: 670px) {
   .navbar-user {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 90;
-    position: fixed;
+    width: 45%;
     font-size: 4rem;
   }
   .navbar-user .cancel {
     padding-top: 0rem;
   }
   #hero-section .search-section {
-    width: 60vw;
-  }
-  #hero-section .contactus-section {
-    width: 70vw;
+    width: 55vw;
   }
   .facilities-section .facilities-card-list {
     display: flex;
@@ -1048,10 +1024,6 @@ html {
   }
   .facilities-section .facilities-card-list .facilities-card {
     width: 85%;
-  }
-  .society-gallery-section .carousel-cell {
-    max-width: 60%;
-    height: 33rem;
   }
   .notice-background .noticeboard-section ul {
     width: 85%;
@@ -1078,20 +1050,11 @@ html {
     margin-bottom: 2rem;
   }
   #footer-section {
-    flex-direction: row-reverse !important;
     flex-wrap: wrap-reverse;
   }
-  #footer-section .message-to-society {
+  #footer-section .message-to-society, #footer-section .society-location, #footer-section .website-creators {
     margin: 5rem auto;
     width: 85vw;
-  }
-  #footer-section .society-location {
-    width: 80vw;
-    margin: 5rem auto;
-  }
-  #footer-section .website-creators {
-    width: 80vw;
-    margin: 5rem auto;
   }
   #footer-section .society-name-footer {
     display: flex;
@@ -1100,33 +1063,28 @@ html {
 
 @media (max-width: 580px) {
   .navbar-user {
-    width: 70%;
+    width: 65%;
   }
-  .society-gallery-section .carousel-cell {
-    max-width: 80%;
-    height: 33rem;
+  .facilities-section .facilities-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .facilities-section .facilities-card-list .facilities-card {
+    width: 95%;
   }
   #hero-section .search-section {
-    width: 85vw;
-  }
-  #hero-section .contactus-section {
-    width: 85vw;
-    flex-direction: column;
-  }
-  #hero-section .contactus-section p {
-    width: 80%;
-    margin-bottom: 1rem;
+    width: 70vw;
   }
 }
 
 @media (max-width: 360px) {
   .navbar-user {
-    width: 85%;
+    width: 75%;
   }
   #hero-section .search-section {
-    width: 94vw;
-  }
-  #hero-section .contactus-section {
-    width: 90vw;
+    width: 93vw;
   }
 }
