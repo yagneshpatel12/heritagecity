@@ -3,6 +3,14 @@
     html{
         font-size:8px;
     }
+    .navbar-user{
+        width: 30%;
+    }
+    #hero-section{
+        .contactus-section{
+            width: 40vw;
+        }
+    }
   }
   @media(max-width:1235px) {
     html{
@@ -16,6 +24,9 @@
         .contactus-section{
             width: 50vw;
         }
+    }
+    .navbar-user{
+     width: 35%;
     }
   }
   @media(max-width:1045px) {
@@ -38,7 +49,7 @@
         }
     }
     .navbar-user{
-        width: 30%;
+        width: 38%;
     }
   }
   @media(max-width:972px){
@@ -47,6 +58,9 @@
           .society,.society-name-footer{
               display: none;
           }
+      }
+      .navbar-user{
+          width: 40%;
       }
      
   }
@@ -113,7 +127,7 @@ width: 27vw;
   @media(max-width:670px){
       .navbar-user{
           height: 100%;
-          width: 50%;
+          width: 60%;
           position: absolute;
           top: 0;
           right: 0;
@@ -204,7 +218,7 @@ width: 80%;
   }
   @media(max-width:580px){
       .navbar-user{
-          width: 70%;
+          width: 80%;
       }
     .society-gallery-section{
 

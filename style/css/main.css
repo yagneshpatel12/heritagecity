@@ -781,15 +781,18 @@ html {
 
 .navbar-user {
   background-color: white;
+  color: white;
   position: fixed;
   top: 8rem;
   right: 0.5rem;
   width: 25%;
   z-index: 3;
+  padding-bottom: 10rem;
   transform: rotateX(0deg);
   display: none;
   height: 100%;
   animation: tr .4s;
+  overflow-y: scroll;
 }
 
 @keyframes tr {
@@ -834,7 +837,7 @@ html {
 
 .navbar-user .user-information div .name {
   text-align: start;
-  font-size: 2.5rem;
+  font-size: 26px;
   font-weight: 700;
   color: #424242;
   margin-bottom: .5rem;
@@ -842,32 +845,33 @@ html {
 
 .navbar-user .user-information div .address {
   text-align: start;
-  font-size: 2rem;
+  font-size: 21px;
   font-weight: 500;
   color: #424242;
 }
 
-.navbar-user .services-section p {
-  padding-left: 2rem;
-  font-size: 2.2rem;
+.navbar-user .services-section a {
+  font-size: 21px;
   font-weight: 500;
   color: #424242;
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
+  padding: 2.4rem 2rem;
   cursor: pointer;
   text-align: start;
+  display: block;
+  text-decoration: none;
 }
 
-.navbar-user .services-section p:hover {
-  color: #4ef515;
-}
-
-.navbar-user .services-section p i {
-  margin-right: 2rem;
-  margin-left: 1rem;
-  font-size: 2.2rem;
-  width: 2rem;
+.navbar-user .services-section a i {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 21px;
+  width: 21px;
   text-align: center;
+}
+
+.navbar-user .services-section a:hover {
+  color: white !important;
+  background-color: #4ef515;
 }
 
 * {
@@ -922,6 +926,9 @@ html {
   html {
     font-size: 8px;
   }
+  .navbar-user {
+    width: 30%;
+  }
 }
 
 @media (max-width: 1235px) {
@@ -966,6 +973,9 @@ html {
 @media (max-width: 860px) {
   html {
     font-size: 6.5px;
+  }
+  .society-members-articles .articles-section {
+    margin-left: 0rem;
   }
   .navbar-section .nav-width .hamburger {
     display: inline;

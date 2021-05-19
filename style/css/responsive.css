@@ -50,6 +50,12 @@ html {
   html {
     font-size: 8px;
   }
+  .navbar-user {
+    width: 30%;
+  }
+  #hero-section .contactus-section {
+    width: 40vw;
+  }
 }
 
 @media (max-width: 1235px) {
@@ -61,6 +67,9 @@ html {
   }
   #hero-section .contactus-section {
     width: 50vw;
+  }
+  .navbar-user {
+    width: 35%;
   }
 }
 
@@ -78,7 +87,7 @@ html {
     height: 30vh;
   }
   .navbar-user {
-    width: 30%;
+    width: 38%;
   }
 }
 
@@ -88,6 +97,9 @@ html {
   }
   #footer-section .society, #footer-section .society-name-footer {
     display: none;
+  }
+  .navbar-user {
+    width: 40%;
   }
 }
 
@@ -143,7 +155,7 @@ html {
 @media (max-width: 670px) {
   .navbar-user {
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: absolute;
     top: 0;
     right: 0;
@@ -221,7 +233,7 @@ html {
 
 @media (max-width: 580px) {
   .navbar-user {
-    width: 70%;
+    width: 80%;
   }
   .society-gallery-section .carousel-cell {
     max-width: 80%;

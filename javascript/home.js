@@ -46,3 +46,21 @@ cancel.addEventListener('click',()=>{
     let navbar_user = document.getElementsByClassName('navbar-user')[0];
     navbar_user.style.display='none';
 })
+
+
+///change olor
+function changeIconColor(no){
+ let changeiconColor = document.getElementsByClassName('services-section')[0];
+ let childnodecount = changeiconColor.childElementCount;
+ for(i=0;childnodecount;i++){
+     if(no===i){
+
+         changeiconColor.children[i].children[0].style.color='white';
+         console.log(changeiconColor.children[i].children[0])
+     }
+     else{
+
+         changeiconColor.children[i].children[0].style.color='#4ef515';
+     }
+ }
+}
