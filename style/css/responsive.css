@@ -121,6 +121,9 @@ html {
   #hero-section .search-section {
     width: 43vw;
   }
+  #hero-section .auto-text-1 {
+    margin-top: 2rem;
+  }
   .society-members-articles .articles-section {
     margin-left: 0rem;
   }
