@@ -39,6 +39,7 @@ navbar_down.addEventListener('click',()=>{
         sidebar.style.display='none';
     }
 });
+
 //mpbile nav
 let hamburger = document.getElementsByClassName('hamburger')[0];
 hamburger.addEventListener('click',()=>{

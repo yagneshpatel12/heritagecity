@@ -80,19 +80,18 @@ transform: rotateX(-0deg);
     }
   }
   .cancel{
-    padding-top: 1rem;
-    display: none;
+    display: none;;
+    padding: 15px 25px 0px 0px;
     text-align: end;
     i{
-      margin-right: 2rem;
       color: $main-color;
-      font-size: 4rem;
+      font-size: 30px;
     }
   }
   .user-information{
+    margin-top: 3rem;
     width: 100%;
     padding: 0rem .5rem 2rem 2rem;
-    margin-top: 3rem;
     border-bottom: 1px solid rgb(209, 209, 209);
     @include flexbox(flex-start);
     img{

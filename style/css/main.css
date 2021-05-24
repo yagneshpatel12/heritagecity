@@ -804,21 +804,20 @@ html {
 }
 
 .sidebar .cancel {
-  padding-top: 1rem;
   display: none;
+  padding: 15px 25px 0px 0px;
   text-align: end;
 }
 
 .sidebar .cancel i {
-  margin-right: 2rem;
   color: #4ec724;
-  font-size: 4rem;
+  font-size: 30px;
 }
 
 .sidebar .user-information {
+  margin-top: 3rem;
   width: 100%;
   padding: 0rem .5rem 2rem 2rem;
-  margin-top: 3rem;
   border-bottom: 1px solid #d1d1d1;
   display: flex;
   justify-content: flex-start;
@@ -1038,7 +1037,7 @@ html {
     font-size: 4rem;
   }
   .sidebar .cancel {
-    padding-top: 0rem;
+    padding-top: 10px;
   }
   #hero-section .search-section {
     width: 55vw;
