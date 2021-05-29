@@ -713,7 +713,7 @@ html {
 .navbar-section {
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: transparent;
   z-index: 2;
 }
 
