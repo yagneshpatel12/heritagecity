@@ -616,7 +616,7 @@ html {
 #footer-section .society-location iframe {
   width: 100%;
   border: 1px solid #c8c8c8;
-  height: 35vh;
+  height: 200px;
 }
 
 #footer-section .website-creators {
@@ -1084,11 +1084,6 @@ html {
   #about-section div ul {
     width: 95%;
   }
-  #about-section div ul P {
-    text-align: center;
-    width: 85%;
-    margin: auto;
-  }
   #about-section div img {
     width: 104%;
     margin-bottom: 2rem;
@@ -1139,6 +1134,12 @@ html {
   #hero-section .search-section {
     width: 70vw;
   }
+}
+
+#about-section div ul P {
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 @media (max-width: 360px) {
