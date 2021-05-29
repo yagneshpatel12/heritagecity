@@ -1,7 +1,7 @@
 .navbar-section{
     width: 100%;
     position: fixed;
-    background-color: transparent;
+    background-color: white;
     z-index: 2;
     .nav-width{
       width: 83vw;
@@ -26,10 +26,10 @@
         a{
          margin: 0rem 2.3rem;
          text-decoration: none;
-         @include Text-design(2.1rem,500,white);
+         @include Text-design(2.1rem,600,white);
          transition: all .3s;
          &:hover{
-          color: $main-color !important;
+          color: #4ec724 !important;
           }
         }
         .nav-icon{
@@ -84,7 +84,7 @@ transform: rotateX(-0deg);
     padding: 15px 25px 0px 0px;
     text-align: end;
     i{
-      color: $main-color;
+      color:$main-color;
       font-size: 30px;
     }
   }
@@ -108,13 +108,13 @@ transform: rotateX(-0deg);
       }
       .address{
         text-align: start;
-        @include Text-design(2.2rem,500,$font-color);
+        @include Text-design(2.2rem,600,$font-color);
       }
     }
   }
   .desktop,.mobile{
     a{
-      @include Text-design(2.2rem,500,$font-color);
+      @include Text-design(2.2rem,600,$font-color);
       padding: 2rem;
       cursor: pointer;
       text-align: start;
@@ -129,7 +129,7 @@ transform: rotateX(-0deg);
       }
       &:hover{ 
         color: white !important;
-        background-color: $main-color;
+        background: $main-color;
       }
     }
   }
@@ -147,7 +147,7 @@ transform: rotateX(-0deg);
         background-color: white;
         margin-top: 2rem;
         &:hover{
-          background-color: $main-color;
+          background: $main-color;
           color: white;
         }
     }

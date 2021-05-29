@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +8,15 @@
 
 html {
   font-size: 10px;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-family: "Nunito";
   scroll-behavior: smooth;
 }
 
 .primary-btn {
   font-weight: 500;
-  background-color: #4ec724;
+  background: #4ec724;
   color: white;
-  border: 0.1rem solid #4ec724;
+  border: none;
 }
 
 .primary-btn:hover {
@@ -24,15 +25,15 @@ html {
 }
 
 .primary-heading {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #424242;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #35404e;
 }
 
 .btn-link {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #424242;
+  color: #35404e;
   transition: all .3s;
 }
 
@@ -139,6 +140,9 @@ html {
 }
 
 @media (max-width: 670px) {
+  .page-width {
+    width: 96vw;
+  }
   .sidebar {
     width: 45%;
     font-size: 4rem;
@@ -177,10 +181,10 @@ html {
     flex-direction: column-reverse;
   }
   #about-section div ul {
-    width: 80%;
+    width: 95%;
   }
   #about-section div img {
-    width: 80%;
+    width: 104%;
     margin-bottom: 2rem;
   }
   #footer-section {
@@ -192,6 +196,9 @@ html {
   }
   #footer-section .society-name-footer {
     display: flex;
+  }
+  #footer-section .society-name-footer {
+    display: block;
   }
 }
 
@@ -226,6 +233,12 @@ html {
   #hero-section .search-section {
     width: 70vw;
   }
+}
+
+#about-section div ul P {
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 @media (max-width: 360px) {
