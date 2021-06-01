@@ -24,6 +24,23 @@
             width: 94vw;
         }
     } 
+    #about-section{
+        div{
+          flex-wrap: wrap-reverse;
+            ul{
+                margin-left: 2rem;
+                p{
+                    text-align: center;
+                    margin-top: 3rem;
+                }
+               width: 87%;
+            }
+            img{
+                width:87%;
+                height:45rem;
+            }
+        }
+    }
   }
   @media(max-width:972px){
       #hero-section{
@@ -86,23 +103,7 @@
           margin-left: 0rem;
         }
       }
-      #about-section{
-          div{
-            flex-wrap: wrap-reverse;
-              ul{
-                  margin-left: 2rem;
-                  p{
-                      text-align: center;
-                      margin-top: 3rem;
-                  }
-                 width: 87%;
-              }
-              img{
-                  width:87%;
-                  height:45rem;
-              }
-          }
-      }
+     
     #footer-section{
         .message-to-society{
             width: 27vw;
