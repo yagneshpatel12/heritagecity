@@ -74,7 +74,7 @@ html {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
-#hero-section .auto-text-1 {
+#hero-section .auto-text-1, #hero-section .auto-text-2 {
   width: 45rem;
   margin: 8rem auto -2rem auto;
   text-align: center;
@@ -87,10 +87,6 @@ html {
   width: 22rem;
   margin: 0 auto;
   margin-bottom: 3rem;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: auto-text-2 1s steps(44) 0.3s 1 normal both;
 }
 
 @keyframes auto-text-1 {
@@ -112,7 +108,7 @@ html {
 }
 
 #hero-section .search-section {
-  width: 32vw;
+  width: 35vw;
 }
 
 #hero-section .search-section img {
@@ -140,7 +136,7 @@ html {
   width: 25%;
   font-size: 2.2rem;
   font-weight: 600;
-  padding: 1.3rem 2rem;
+  padding: 1.4rem 2rem;
   margin-left: -.5rem;
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
@@ -148,7 +144,7 @@ html {
 
 #hero-section .contactus-section {
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   background-color: #00000057;
   display: flex;
   justify-content: center;
@@ -156,13 +152,13 @@ html {
   flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
-  padding: 1.5rem 2rem;
+  height: 15rem;
   border-radius: .5rem;
 }
 
 #hero-section .contactus-section div p {
   margin-right: 3rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 500;
   color: yellow;
 }
@@ -172,7 +168,7 @@ html {
   font-size: 3rem;
   background-color: #00000057;
   padding: .8rem 1.5rem;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 500;
   color: #4ec724;
   transition: all .5s;
@@ -998,7 +994,7 @@ html {
 
 @media (max-width: 972px) {
   #hero-section .search-section {
-    width: 38vw;
+    width: 40vw;
   }
   #footer-section {
     justify-content: space-around;
@@ -1039,7 +1035,7 @@ html {
     display: block;
   }
   #hero-section .search-section {
-    width: 43vw;
+    width: 45vw;
   }
   #hero-section .auto-text-1 {
     margin-top: 2rem;
@@ -1070,7 +1066,7 @@ html {
     padding-top: 10px;
   }
   #hero-section .search-section {
-    width: 55vw;
+    width: 58vw;
   }
   .facilities-section .facilities-card-list {
     display: flex;
@@ -1140,7 +1136,7 @@ html {
     width: 95%;
   }
   #hero-section .search-section {
-    width: 70vw;
+    width: 75vw;
   }
   #about-section div ul {
     width: 95%;
@@ -1152,17 +1148,20 @@ html {
 }
 
 @media (max-width: 360px) {
-  div ul {
+  #about-section div ul {
     width: 105%;
     margin: auto;
   }
-  div img {
+  #about-section div img {
     width: 105%;
   }
   .sidebar {
     width: 75%;
   }
   #hero-section .search-section {
-    width: 93vw;
+    width: 100vw;
+  }
+  #hero-section .contactus-section {
+    flex-direction: column;
   }
 }

@@ -91,7 +91,7 @@ html {
 
 @media (max-width: 972px) {
   #hero-section .search-section {
-    width: 38vw;
+    width: 40vw;
   }
   #footer-section {
     justify-content: space-around;
@@ -132,7 +132,7 @@ html {
     display: block;
   }
   #hero-section .search-section {
-    width: 43vw;
+    width: 45vw;
   }
   #hero-section .auto-text-1 {
     margin-top: 2rem;
@@ -163,7 +163,7 @@ html {
     padding-top: 10px;
   }
   #hero-section .search-section {
-    width: 55vw;
+    width: 58vw;
   }
   .facilities-section .facilities-card-list {
     display: flex;
@@ -233,7 +233,7 @@ html {
     width: 95%;
   }
   #hero-section .search-section {
-    width: 70vw;
+    width: 75vw;
   }
   #about-section div ul {
     width: 95%;
@@ -245,17 +245,25 @@ html {
 }
 
 @media (max-width: 360px) {
-  div ul {
+  #about-section div ul {
     width: 105%;
     margin: auto;
   }
-  div img {
+  #about-section div img {
     width: 105%;
   }
   .sidebar {
     width: 75%;
   }
   #hero-section .search-section {
-    width: 93vw;
+    width: 95vw;
+  }
+  #hero-section .contactus-section {
+    padding: 1rem 0rem;
+    height: 18rem;
+    flex-direction: column;
+  }
+  #hero-section .contactus-section button {
+    margin-top: 2rem;
   }
 }

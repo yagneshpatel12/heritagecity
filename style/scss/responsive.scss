@@ -45,7 +45,7 @@
   @media(max-width:972px){
       #hero-section{
           .search-section{
-              width: 38vw;
+              width: 40vw;
           }
       }
       #footer-section{
@@ -92,7 +92,7 @@
     }
     #hero-section {
         .search-section{
-                width: 43vw;
+                width: 45vw;
             }
             .auto-text-1{
                 margin-top: 2rem;
@@ -130,7 +130,7 @@
       }
     #hero-section {
         .search-section{
-                width: 55vw;
+                width: 58vw;
             }
     }
     .facilities-section{
@@ -207,7 +207,7 @@
 }
     #hero-section {
         .search-section{
-                width: 70vw;
+                width: 75vw;
             }
     }
     #about-section{
@@ -223,6 +223,7 @@
     }
   }
   @media(max-width:360px){
+      #about-section{
     div{
         ul{
            width: 105%;
@@ -232,12 +233,21 @@
               width: 105%;
           }
 }
+      }
       .sidebar{
           width: 75%;
       }
       #hero-section {
         .search-section{
-                width: 93vw;
+                width: 95vw;
+            }
+            .contactus-section{
+                padding: 1rem 0rem;
+                height: 18rem;
+                flex-direction: column;
+                button{
+                    margin-top: 2rem;
+                }
             }
     }
   }
