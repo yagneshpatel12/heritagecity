@@ -86,6 +86,23 @@
           margin-left: 0rem;
         }
       }
+      #about-section{
+          div{
+            flex-wrap: wrap-reverse;
+              ul{
+                  margin-left: 2rem;
+                  p{
+                      text-align: center;
+                      margin-top: 3rem;
+                  }
+                 width: 87%;
+              }
+              img{
+                  width:87%;
+                  height:45rem;
+              }
+          }
+      }
     #footer-section{
         .message-to-society{
             width: 27vw;
@@ -145,19 +162,6 @@
             }
         }
     }
-    #about-section{
-        div{
-            flex-direction:column-reverse;
-            ul{
-              width: 95%;
-             
-            }
-            img{
-                width: 104%;
-                margin-bottom: 2rem;
-            }
-        }
-    }
     #footer-section{
         flex-wrap: wrap-reverse;
         .message-to-society,.society-location,.website-creators{
@@ -205,19 +209,28 @@
                 width: 70vw;
             }
     }
-  }
-  #about-section{
-      div{
-          ul{
-            P{
-                text-align: center;
-                width: 100%;
-                margin: auto;
+    #about-section{
+        div{
+            ul{
+               width: 95%;
+               margin: auto;
+              }
+              img{
+                  width: 100%;
+              }
             }
-          }
-      }
+    }
   }
   @media(max-width:360px){
+    div{
+        ul{
+           width: 105%;
+           margin: auto;
+          }
+          img{
+              width: 105%;
+          }
+}
       .sidebar{
           width: 75%;
       }

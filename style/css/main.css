@@ -1075,16 +1075,6 @@ html {
   .society-members-articles .articles-section .article .article-details {
     width: 85%;
   }
-  #about-section div {
-    flex-direction: column-reverse;
-  }
-  #about-section div ul {
-    width: 95%;
-  }
-  #about-section div img {
-    width: 104%;
-    margin-bottom: 2rem;
-  }
   #footer-section {
     flex-wrap: wrap-reverse;
   }
@@ -1133,13 +1123,14 @@ html {
   }
 }
 
-#about-section div ul P {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-}
-
 @media (max-width: 360px) {
+  div ul {
+    width: 105%;
+    margin: auto;
+  }
+  div img {
+    width: 105%;
+  }
   .sidebar {
     width: 75%;
   }

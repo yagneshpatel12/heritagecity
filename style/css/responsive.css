@@ -125,6 +125,21 @@ html {
   .society-members-articles .articles-section {
     margin-left: 0rem;
   }
+  #about-section div {
+    flex-wrap: wrap-reverse;
+  }
+  #about-section div ul {
+    margin-left: 2rem;
+    width: 87%;
+  }
+  #about-section div ul p {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #about-section div img {
+    width: 87%;
+    height: 45rem;
+  }
   #footer-section .message-to-society {
     width: 27vw;
   }
@@ -174,16 +189,6 @@ html {
   .society-members-articles .articles-section .article .article-details {
     width: 85%;
   }
-  #about-section div {
-    flex-direction: column-reverse;
-  }
-  #about-section div ul {
-    width: 95%;
-  }
-  #about-section div img {
-    width: 104%;
-    margin-bottom: 2rem;
-  }
   #footer-section {
     flex-wrap: wrap-reverse;
   }
@@ -230,15 +235,23 @@ html {
   #hero-section .search-section {
     width: 70vw;
   }
-}
-
-#about-section div ul P {
-  text-align: center;
-  width: 100%;
-  margin: auto;
+  #about-section div ul {
+    width: 95%;
+    margin: auto;
+  }
+  #about-section div img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 360px) {
+  div ul {
+    width: 105%;
+    margin: auto;
+  }
+  div img {
+    width: 105%;
+  }
   .sidebar {
     width: 75%;
   }
