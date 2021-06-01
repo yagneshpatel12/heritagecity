@@ -519,6 +519,7 @@ html {
   flex-direction: row;
   text-align: center;
   text-align: start;
+  flex-wrap: wrap-reverse;
 }
 
 #about-section div ul {
@@ -973,6 +974,21 @@ html {
   .navbar-section .nav-width {
     width: 94vw;
   }
+  #about-section div {
+    flex-wrap: wrap-reverse;
+  }
+  #about-section div ul {
+    margin-left: 2rem;
+    width: 87%;
+  }
+  #about-section div ul p {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #about-section div img {
+    width: 87%;
+    height: 45rem;
+  }
 }
 
 @media (max-width: 972px) {
@@ -1120,6 +1136,13 @@ html {
   }
   #hero-section .search-section {
     width: 70vw;
+  }
+  #about-section div ul {
+    width: 95%;
+    margin: auto;
+  }
+  #about-section div img {
+    width: 100%;
   }
 }
 

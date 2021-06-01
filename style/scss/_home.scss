@@ -314,6 +314,7 @@
       width:100%;
       @include flexbox(space-around);
       text-align: start;
+      flex-wrap: wrap-reverse;
       ul{
          width: 65%;
          li{
