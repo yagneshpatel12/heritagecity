@@ -173,7 +173,7 @@
    color: white;
    h2{
       width: 100%;
-      color: red !important;
+      text-align: center;
    }
    @include flexbox(center,column,start);
    ul{

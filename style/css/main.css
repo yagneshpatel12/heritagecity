@@ -303,7 +303,7 @@ html {
 
 .notice-background .noticeboard-section h2 {
   width: 100%;
-  color: red !important;
+  text-align: center;
 }
 
 .notice-background .noticeboard-section ul {
