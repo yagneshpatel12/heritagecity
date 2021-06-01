@@ -171,6 +171,10 @@
    border: 1rem solid white;
    padding:3rem 0rem;
    color: white;
+   h2{
+      width: 100%;
+      color: red !important;
+   }
    @include flexbox(center,column,start);
    ul{
       width: 80%;

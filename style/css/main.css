@@ -301,6 +301,11 @@ html {
   text-align: start;
 }
 
+.notice-background .noticeboard-section h2 {
+  width: 100%;
+  color: red !important;
+}
+
 .notice-background .noticeboard-section ul {
   width: 80%;
   margin-top: 2rem;
