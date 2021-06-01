@@ -29,7 +29,7 @@
          @include Text-design(2.1rem,600,white);
          transition: all .3s;
          &:hover{
-          color: #4ec724 !important;
+          color:$main-color !important;
           }
         }
         .nav-icon{
